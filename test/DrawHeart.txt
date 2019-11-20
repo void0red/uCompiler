@@ -1,0 +1,10 @@
+map is (800, 800);
+origin is (400, 400);
+scale is (150, 150);
+color is (255, 0, 0, 255);
+
+for t from -pi to pi step pi/20000
+draw(
+    abs(t) * (abs(t) / (abs(t) + 1)) ^ 0.5 * sin(t),
+    0.9 * (1 + abs(t) * ((abs(t) / (abs(t) + 1)) ^ 0.5) * cos(t))
+);
