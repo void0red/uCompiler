@@ -1,0 +1,19 @@
+map is (800, 800);
+color is (138, 43, 226, 255);
+
+origin is (400, 400);
+scale is (200, 200);
+for t from 0 to 2*pi step pi/1000 draw(cos(t), sin(t));
+
+
+origin is (0, 0);
+scale is (1, 1);
+
+for t from 400-100*3^0.5 to 400+100*3^0.5 step 0.001 draw(t, 300);
+for t from 400-100*3^0.5 to 400 step 0.001 draw(t, t*3^0.5 + 600 - 400*3^0.5);
+for t from 400 to 400+100*3^0.5 step 0.001 draw(t, -t*3^0.5 + 600 + 400*3^0.5);
+
+
+for t from 400-100*3^0.5 to 400+100*3^0.5 step 0.001 draw(t, 500);
+for t from 400-100*3^0.5 to 400 step 0.001 draw(t, -t*3^0.5 + 200 + 400*3^0.5);
+for t from 400 to 400+100*3^0.5 step 0.001 draw(t, +t*3^0.5 + 200 - 400*3^0.5);

@@ -26,9 +26,9 @@ func NewDrawer(width, height int) *Drawer {
 		Parameter: 0,
 		Origin:    new(Point),
 		RotAngle:  0,
-		Scale:     new(Point),
 		img:       image.NewRGBA(image.Rect(0, 0, width, height)),
 	}
+	d.Scale = &Point{X: 1, Y: 1}
 	d.Color = &color.RGBA{R: 255, G: 255, B: 255, A: 255}
 	draw.Draw(d.img, d.img.Bounds(), &image.Uniform{C: color.White}, image.Point{X: 0, Y: 0}, draw.Src)
 	return &d
