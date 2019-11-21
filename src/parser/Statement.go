@@ -2,7 +2,7 @@ package parser
 
 import (
 	"fmt"
-	"lexer"
+	"uCompiler/lexer"
 )
 
 /*

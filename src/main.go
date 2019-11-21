@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
-	"parser"
+	"uCompiler/parser"
 )
 
 var (

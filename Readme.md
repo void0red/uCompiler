@@ -52,5 +52,8 @@ Usage of .\bin\release.exe:
     - abs, ln, exp, abs
     
 ## Build
-1. add the project path to your $GOPATH
-2. go build src
+!!!check on the `GO111MODULE`
+```shell script
+cd src
+go build
+```

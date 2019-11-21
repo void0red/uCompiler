@@ -2,8 +2,8 @@ package main
 
 import (
 	"io/ioutil"
-	"parser"
 	"testing"
+	"uCompiler/parser"
 )
 
 func TestDraw(t *testing.T) {

@@ -2,14 +2,14 @@ package parser
 
 import (
 	"container/list"
-	"drawer"
 	"errors"
 	"fmt"
 	"io"
-	"lexer"
 	"math"
 	"strconv"
 	"strings"
+	"uCompiler/drawer"
+	"uCompiler/lexer"
 )
 
 type Parser struct {
